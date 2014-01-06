@@ -5,10 +5,12 @@ gem 'rails', '4.0.2'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
+# Make generators create HAML
+gem 'haml-rails'
+gem 'modernizr-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
@@ -33,10 +35,28 @@ group :doc do
 end
 
 gem 'foundation-rails'
+gem 'bourbon'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
-gem 'puma'
+#gem 'puma'
 
 # Heroku compatible background processing (mailing)
 #gem 'sucker_punch', '~> 1.0'
+group :production do
+	gem 'dalli'
+	gem 'pg'
+end
+
+group :development do
+	gem 'pry'
+	gem 'pry-rails'
+	gem 'pry-nav'
+	gem "binding_of_caller"  
+	gem "better_errors"
+	gem 'sprockets_better_errors'
+	# Filesystem notifiers, mostly for guard
+  gem 'rb-inotify', :require => false
+  gem 'rb-fsevent', :require => false
+  gem 'rb-fchange', :require => false
+end
