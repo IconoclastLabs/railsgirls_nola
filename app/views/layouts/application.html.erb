@@ -13,7 +13,27 @@
 <%= yield %>
 
 <footer>
-  Footer
+  <hr>
+  <div class='row'>
+    <div class='columns small-12'>
+      <h6>
+        Rails Girls New Orleans is run by
+        <%= link_to 'New Orleans Women in Technology', 'http://www.neworleanswit.org/' %>
+        and
+        <%= link_to 'Iconoclast Labs.', 'http://www.iconoclastlabs.com' %>
+      </h6>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='columns small-12 '>
+      <h6>Questions? Comments? Contact us
+        <%= link_to "@NewOrleansWIT", 'https://twitter.com/NewOrleansWIT' %>
+        or
+        <%= link_to "@iconoclastlabs", 'http://www.twitter.com/iconoclastlabs' %>
+      </h6>
+    </div>
+  </div>
+
 </footer>
 <script>
   $(function() {
