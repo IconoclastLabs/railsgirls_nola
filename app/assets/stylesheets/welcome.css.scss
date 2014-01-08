@@ -3,5 +3,30 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .top_logo{
-	margin-top: 5%;
+	margin-top: 15%;
+}
+
+.railsgirls-sub-nav{
+  @include sub-nav(
+    // Control the color of the divider between links.
+    $font-color: $primary-color,
+    // Control your font-size per label.
+    $font-size: rem-calc(18),
+    // Change the background color for your labels
+    $active-bg: red
+  );
+  dd{
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  }
+}
+
+#about{
+  margin-top: 75%;
+}
+#location{
+  margin-top: 5%;
+}
+#schedule{
+  margin-top: 5%;
+  //label{margin-top: 5px;}
 }
