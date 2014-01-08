@@ -1,6 +1,10 @@
+//= depend_on_asset "geometry.png"
+
 @import 'foundation';
 @import 'bourbon';
 @import 'welcome';
+
+
 
 html, body {
     margin: 0;
@@ -8,4 +12,29 @@ html, body {
     height: 100%;
 		background-image: url(image-path('geometry.png'));
 	  background-repeat: repeat;
+}
+
+
+.railsgirls-sub-nav{
+  @include sub-nav(
+    // Control the color of the divider between links.
+    $font-color: $primary-color,
+    // Control your font-size per label.
+    $font-size: rem-calc(18),
+    // Change the background color for your labels
+    $active-bg: red
+  );
+  dd{
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  }
+}
+
+#about{
+  margin-top: 75%;
+}
+#location{
+  margin-top: 10%;
+}
+#schedule{
+  margin-top: 10%;
 }

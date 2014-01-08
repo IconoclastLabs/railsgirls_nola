@@ -2,11 +2,138 @@
   .columns.small-10.medium-8.large-6.small-centered
     = image_tag 'Logo.png'
 .row
-  .columns.small-centered.small-12
-    Schedule
-    %br
-    Are you a girl who wants to learn?
-    = link_to 'Apply Here', 'https://docs.google.com/forms/d/1U3Xp9ZDRwVs-RABN7WGWbMU_rLFYzawZoy8sJ6Z3VCs/viewform'
-    %br
-    Interested in being a coach?
-    = link_to 'Apply Here', 'https://docs.google.com/forms/d/1A1F9a9UFn58xgeqFcvtPT4gBnvbGqOeGLv9_1HJhd6E/viewform'
+  .columns.small-12
+    %dl.railsgirls-sub-nav
+      %dd
+        = link_to 'About', '#about'
+      %dd
+        = link_to 'Location', '#location'
+      %dd
+        = link_to 'Schedule', '#schedule'
+      %dd
+        = link_to 'Resources'
+
+
+
+
+#about.row
+  .columns.small-10
+    .row
+      %h2.columns.small-12 About
+    .row
+      %h6.columns.small-12.large-10.large-offset-1 Rails Girls is a free Ruby-on-Rails workshop to introduce absolute beginners to the world of programming and web development.
+    .row
+      %h6.columns.small-12.large-10.large-offset-1 Rails Girls aims to give the tools to enthusiastic girls and women to build their ideas themselves.
+    .row
+      %h6.columns.small-12.large-10.large-offset-1 Are you a girl who wants to learn Rails?
+      %h6.columns.small-12.large-10.large-offset-1
+        = link_to 'Apply Here', 'https://docs.google.com/forms/d/1U3Xp9ZDRwVs-RABN7WGWbMU_rLFYzawZoy8sJ6Z3VCs/viewform', class: 'button'
+    .row
+      %h6.columns.small-12.large-10.large-offset-1 Interested in being a coach?
+      %h6.columns.small-12.large-10.large-offset-1
+        = link_to 'Apply Here', 'https://docs.google.com/forms/d/1A1F9a9UFn58xgeqFcvtPT4gBnvbGqOeGLv9_1HJhd6E/viewform', class: 'button'
+
+#location.row
+  .columns.small-12
+    %h2 Location
+    .row
+      .columns.small-12.large-5.large-offset-1.medium-5
+        %iframe{src: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3456.976450228271!2d-90.065508!3d29.951356!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620a60d568d202b%3A0x32e79bf1aff3cc89!2s365+Canal+Street%2C+Suite+700+New+Orleans%2C+LA+70130!5e0!3m2!1sen!2sus!4v1389160704902", width: "400", height: "300", frameborder: "0", style: "border:0"}
+      .columns.small-11.small-offset-1.large-5.large-offset-1.medium-5
+        %h4
+          Federated Sample Offices
+        %h5
+          365 Canal Street, Suite 700
+        %h5
+          New Orleans, LA 70130
+
+#schedule.row
+  .columns.small-10
+    %h2 Schedule
+
+    %h3.subheader
+      Friday, February 7
+    .row
+      .columns.small-5.large-offset-3.large-1.medium-offset-3.medium-1
+        .label.secondary
+          6:30pm - 8:30pm
+      .columns.small-6.large-6.medium-6
+        .row
+          %h4 Installation Party
+        .row
+          %h6 Get know the attendees a little bit before hand. Bring your laptop if you can and we'll work through installing Ruby on Rails with you.
+    %h3.subheader
+      Saturday, February 8
+    .row
+      .columns.small-5.large-offset-3.large-1.medium-offset-3.medium-1
+        .label.secondary
+          8:30am - 10:00am
+      .columns.small-6.large-6.medium-6
+        .row
+          %h4 Registration and Breakfast
+        .row
+          %h6 Get ready and handle any last minute issues for the workshop.
+    .row
+      .columns.small-5.large-offset-3.large-1.medium-offset-3.medium-1
+        .label.secondary
+          10:00am - 10:30am
+      .columns.small-6.large-6.medium-6
+        .row
+          %h4 Welcome
+        .row
+          %h6 Outline of the day & word from sponsors + Bio Break.
+    .row
+      .columns.small-5.large-offset-3.large-1.medium-offset-3.medium-1
+        .label.secondary
+          10:30am - 11:00am
+      .columns.small-6.large-6.medium-6
+        .row
+          %h4 Designing your web app - UX workshop
+        -#.row
+          %h6
+    .row
+      .columns.small-5.large-offset-3.large-1.medium-offset-3.medium-1
+        .label.secondary
+          11:00am - 11:30am
+      .columns.small-6.large-6.medium-6
+        .row
+          %h4 Tryruby.org - Intro to programming
+        .row
+          %h6 Let's get coding!
+    .row
+      .columns.small-5.large-offset-3.large-1.medium-offset-3.medium-1
+        .label.secondary
+          11:30am - 1:00pm
+      .columns.small-6.large-6.medium-6
+        .row
+          %h4 Workshop
+        .row
+          %h6 Jumpstart your first web application
+    .row
+      .columns.small-5.large-offset-3.large-1.medium-offset-3.medium-1
+        .label.secondary
+          1:00pm - 2:00pm
+      .columns.small-6.large-6.medium-6
+        .row
+          %h4 Lunch
+        -#.row
+          %h6
+    .row
+      .columns.small-5.large-offset-3.large-1.medium-offset-3.medium-1
+        .label.secondary
+          2:00pm - 2:30pm
+      .columns.small-6.large-6.medium-6
+        .row
+          %h4 Bentobox - Understanding Web Apps
+        .row
+          %h6 Recap of what we’ve learned and how it all fits together.
+    .row
+      .columns.small-5.large-offset-3.large-1.medium-offset-3.medium-1
+        .label.secondary
+          2:30pm - 6:00pm
+      .columns.small-6.large-6.medium-6
+        .row
+          %h4 Workshop
+        .row
+          %h6 Extend your application
+
