@@ -10,7 +10,7 @@
 }
 .railsgirls-sub-nav{
   margin-right: auto;
-  margin-left: auto;
+  margin-left: auto !important;
   text-align: center;
   @include sub-nav(
     // Control the color of the divider between links.
