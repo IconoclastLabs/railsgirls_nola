@@ -7,6 +7,10 @@
 }
 
 .railsgirls-sub-nav{
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  background-color: blue;
   @include sub-nav(
     // Control the color of the divider between links.
     $font-color: $primary-color,
