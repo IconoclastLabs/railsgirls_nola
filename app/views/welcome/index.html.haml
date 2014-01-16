@@ -2,9 +2,9 @@
   .columns.small-10.medium-8.large-6.small-centered
     = image_tag 'Logo.png'
 .row
-  .columns.small-12.medium-6.large-5.small-centered.medium-centered.large-centered
+  .columns.small-12.medium-6.large-5.small-centered{style: "margin-top: 10px;"}
     %div{:'data-magellan-expedition' => "fixed"}
-      %dl.railsgirls-sub-nav
+      %dl.railsgirls-sub-nav.small-centered
         %dd{:'data-magellan-arrival' => "about"}
           = link_to 'About', '#about'
         %dd{:'data-magellan-arrival' => "location"}
@@ -30,11 +30,20 @@
       .row
         %h6.columns.small-12.large-10.large-offset-1 Are you a girl who wants to learn Rails?
         %h6.columns.small-12.large-10.large-offset-1
-          = link_to 'Apply Here', 'https://docs.google.com/forms/d/1U3Xp9ZDRwVs-RABN7WGWbMU_rLFYzawZoy8sJ6Z3VCs/viewform', class: 'button'
+          .button.disabled
+            Apply Here
+          -#= link_to 'Apply Here', 'https://docs.google.com/forms/d/1U3Xp9ZDRwVs-RABN7WGWbMU_rLFYzawZoy8sJ6Z3VCs/viewform', class: 'button'
       .row
         %h6.columns.small-12.large-10.large-offset-1 Interested in being a coach?
         %h6.columns.small-12.large-10.large-offset-1
-          = link_to 'Apply Here', 'https://docs.google.com/forms/d/1A1F9a9UFn58xgeqFcvtPT4gBnvbGqOeGLv9_1HJhd6E/viewform', class: 'button'
+          .button.disabled
+            Apply Here
+          -#= link_to 'Apply Here', 'https://docs.google.com/forms/d/1A1F9a9UFn58xgeqFcvtPT4gBnvbGqOeGLv9_1HJhd6E/viewform', class: 'button'
+      .alert-box.alert.radius{:'data-alert' => ''}
+        %h5 Wow!
+
+        %h6 We've filled all available coach and participant slots.
+        %h6 Rails Girls will surely happen again soon, be sure to check back for updates.
 
 #location.row
   .columns.small-12
