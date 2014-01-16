@@ -4,6 +4,63 @@
 @import 'bourbon';
 @import 'welcome';
 
+.sub-nav {
+  display: block;
+  width: auto;
+  overflow: hidden;
+  margin: -0.25rem 0 1.0rem;
+  padding-top: 0.25rem;
+  margin-right: 0;
+  margin-left: -0.75rem; }
+  .sub-nav dt {
+    text-transform: uppercase; }
+  .sub-nav dt,
+  .sub-nav dd,
+  .sub-nav li {
+    float: left;
+    display: inline;
+    margin-left: 1rem;
+    margin-bottom: 0.625rem;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 0.875rem;
+    color: #999999; }
+    .sub-nav dt a,
+    .sub-nav dd a,
+    .sub-nav li a {
+      text-decoration: none;
+      color: #999999; }
+      .sub-nav dt a:hover,
+      .sub-nav dd a:hover,
+      .sub-nav li a:hover {
+        color: #0085b1; }
+    .sub-nav dt.active a,
+    .sub-nav dd.active a,
+    .sub-nav li.active a {
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      font-weight: normal;
+      background: #008cba;
+      padding: 0.1875rem 1rem;
+      cursor: default;
+      color: white; }
+      .sub-nav dt.active a:hover,
+      .sub-nav dd.active a:hover,
+      .sub-nav li.active a:hover {
+        background: #0085b1; }
+
+
+[data-magellan-expedition] {
+  background: white;
+  z-index: 50;
+  min-width: 100%;
+  padding: 10px; }
+  [data-magellan-expedition] .sub-nav {
+    margin-bottom: 0; }
+    [data-magellan-expedition] .sub-nav dd {
+      margin-bottom: 0; }
+    [data-magellan-expedition] .sub-nav .active {
+      line-height: 1.2em; }
 
 
 html, body {
