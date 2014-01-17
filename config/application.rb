@@ -26,6 +26,7 @@ module RailsgirlsNola
     config.assets.precompile += %w( reveal.min )
     config.assets.precompile += %w( theme/default.css )
     config.assets.precompile += %w( zenburn )
+    config.assets.precompile += %w( theme/solarized.css )
     config.assets.precompile += %w( head.min.js )
   end
 end
