@@ -2,7 +2,8 @@
   <title> UX Design </title>
 <% end %>
 <section>
-  <h1> UX Design </h1>
+  <h1> UX Design</h1>
+  <h1>Crash Course</h1>
   <h3> User Experience of the Web </h3>
   <p>
     <small>
@@ -43,7 +44,7 @@
   <section>
     <h2> HTML is a <em>markup</em> language </h1>
     <h4> It tells the browser what content to display.</h4>
-    <pre><code data-trim contenteditable>
+    <pre><code data-trim >
 &lt;p&gt;This is content.&lt;/p&gt;
 
     </code></pre>
@@ -56,7 +57,7 @@
   <section>
     <h2> HTML is a <em>markup</em> language </h1>
     <h4> It tells the browser what content to display.</h4>
-    <pre><code data-trim contenteditable>
+    <pre><code data-trim >
 &lt;p&gt;This is content.&lt;/p&gt;
 &lt;h2&gt;This is content.&lt;/h2&gt;
 
@@ -67,7 +68,7 @@
   <section>
     <h2> HTML is a <em>markup</em> language </h1>
     <h4> It tells the browser what content to display.</h4>
-    <pre><code data-trim contenteditable>
+    <pre><code data-trim >
 &lt;p&gt;This is content.&lt;/p&gt;
 &lt;h2&gt;This is content.&lt;/h2&gt;
 &lt;p&gt;This is &lt;em&gt;also&lt;/em&gt; content.&lt;/p&gt;
@@ -89,15 +90,15 @@
     <p>This is content.</p>
     <h2>This is content.</h2>
     <p>This is <em>also</em> content.</p>
-    <%= asset_tag 'assets/smiley_face.jpg' %>
+    <%= image_tag('../assets/slides/ux_design/smiley_face.jpg', size: '50')%>
   </section>
 
 
 
   <section>
     <h2> Required Structure </h2>
-
-    <pre><code data-trim contenteditable>
+    <h3> "Boilerplate" </h3>
+    <pre><code data-trim >
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -110,7 +111,7 @@
 &lt;/body&gt;
 &lt;/html&gt;
       </code></pre>
-    <p> "Boilerplate" </p>
+
     <aside class='notes'>
       It is the underlying structure. It influences your design, but for the most part it is not visible to the users.
 
@@ -124,7 +125,7 @@
     <section>
     <h2> A Simple Yet Complete Page </h2>
 
-    <pre><code data-trim contenteditable>
+    <pre><code data-trim >
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
@@ -147,17 +148,176 @@
     </aside>
   </section>
 
+
   <section>
-  <h1> Links and Resources </h1>
-  <p>Mozilla Developer Network - HTML</p>
-  <p> <%= link_to 'https://developer.mozilla.org/en-US/docs/Web/HTML', "https://developer.mozilla.org/en-US/docs/Web/HTML" %> </p>
-  <p><strike>W3Schools</strike></p>
-  <p><strike>http://www.w3schools.com/</strike></p>
+    <h1> Lists </h1>
+    <p> Order and Unordered</p>
+
+    <aside class='notes'>
+    What are some ordered lists? Recipes? Driving Directions?
+    What are some unordered lists? Grocery shopping lists, inventories, etc
+
+    Why else might we order things?  Sorting? Categorization?
+    </aside>
+  </section>
+  <section>
+    <h1> Ordered Lists </h1>
+    <pre style="float:left; width: 30%"><code data-trim >
+&lt;ol&gt;
+  &lt;li&gt;
+    Sugar
+  &lt;/li&gt;
+  &lt;li&gt;
+    Cream
+  &lt;/li&gt;
+  &lt;li&gt;
+    Coffee
+  &lt;/li&gt;
+  &lt;li&gt;
+    Water
+  &lt;/li&gt;
+&lt;/ol&gt;
+      </code></pre>
+      <pre style="float:right; width: 30%"><code data-trim >
+&lt;ol&gt;
+  &lt;li&gt;
+    Water
+  &lt;/li&gt;
+  &lt;li&gt;
+    Coffee
+  &lt;/li&gt;
+  &lt;li&gt;
+    Cream
+  &lt;/li&gt;
+  &lt;li&gt;
+    Sugar
+  &lt;/li&gt;
+&lt;/ol&gt;
+      </code></pre>
+  <p>
+    <ol style="float:left;">
+      <li>
+        Sugar
+      </li>
+      <li>
+        Cream
+      </li>
+      <li>
+        Coffee
+      </li>
+      <li>
+        Water
+      </li>
+    </ol>
+    <ol style="float:right;">
+      <li>
+        Water
+      </li>
+      <li>
+        Coffee
+      </li>
+      <li>
+        Cream
+      </li>
+      <li>
+        Sugar
+      </li>
+    </ol>
+    </p>
+    <aside class='notes'>
+    </aside>
+  </section>
+
+  <section>
+    <h1> Unordered Lists </h1>
+    <pre><code data-trim >
+    &lt;h4&gt;Awesome 'B' Things&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    Bill Murray
+  &lt;/li&gt;
+  &lt;li&gt;
+    Beer
+  &lt;/li&gt;
+  &lt;li&gt;
+    Bubblewrap
+  &lt;/li&gt;
+&lt;/ul&gt;
+      </code></pre>
+  <div>
+  <h4>Awesome 'B' Things</h4>
+  <ul>
+    <li>
+      Bill Murray
+    </li>
+    <li>
+      Beer
+    </li>
+    <li>
+      Bubblewrap
+    </li>
+  </ul>
+  </div>
   <aside class='notes'>
 
   </aside>
+  </section>
+
+  <section>
+    <h1> HTML Practice </h1>
+    <aside class='notes'>
+
+    </aside>
+  </section>
+
+  <section>
+    <h1> Links and Resources </h1>
+    <p>Mozilla Developer Network - HTML</p>
+    <p> <%= link_to 'https://developer.mozilla.org/en-US/docs/Web/HTML', "https://developer.mozilla.org/en-US/docs/Web/HTML" %> </p>
+    <p><strike>W3Schools</strike></p>
+    <p><strike>http://www.w3schools.com/</strike></p>
+
+    <p>
+      <%= link_to "HTML5 Boilerplate", "http://html5boilerplate.com/" %>
+    </p>
+    <aside class='notes'>
+
+    </aside>
+  </section>
+
 </section>
 
+<section>
+  <section>
+    <h1> CSS </h1>
+    <h2>Cascading Style Sheets</h2>
+    <p> also a markup language</p>
+
+    <aside class='notes'>
+
+    </aside>
+  </section>
+  <section>
+    <h1> Adding Style </h1>
+    <p>CSS describes the <em>presentation</em> of your HTML.</p>
+
+    <aside class='notes'>
+      At this point, everything is still basically static.
+
+      You can have different CSS for different sizes of screens,
+      CSS for when printing a website, or even how screen readers
+      should present your page.
+    </aside>
+  </section>
+  <section>
+    <h1> Key Concepts </h1>
+    <p>Selectors</p>
+    <p>The Box Model</p>
+    <p>Inheritence</p>
+    <aside class='notes'>
+
+    </aside>
+  </section>
 </section>
 
 
