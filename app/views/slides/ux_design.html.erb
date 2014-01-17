@@ -1,5 +1,7 @@
 <% content_for :head do %>
   <title> UX Design </title>
+  <%= stylesheet_link_tag "slides/ux_design" %>
+
 <% end %>
 <section>
   <h1> UX Design</h1>
@@ -316,6 +318,31 @@
     <p>Inheritence</p>
     <aside class='notes'>
 
+    </aside>
+  </section>
+
+  <section>
+    <h1> Selectors </h1>
+    HTML
+    <pre><code data-trim class="html">
+&lt;div class='insect' id='bees'&gt;Bees&lt;/div&gt;
+&lt;div class='insect' id='wasps'&gt;Wasps&lt;/div&gt;
+&lt;div class='arachnid' id='spiders'&gt;Spiders&lt;/div&gt;
+      </code></pre>
+    CSS
+    <pre><code data-trim class="css">
+#bees{ color: blue; }
+#wasps{ color: green; }
+.insect{ background-color: red; }
+div{ font-style: italic }
+    </code></pre>
+    Result
+    <div class='insect italic' id='bees' >Bees</div>
+    <div class='insect italic' id='wasps'>Wasps</div>
+    <div class='arachnid italic' id='spiders' >Spiders</div>
+    <aside class='notes'>
+      Universal, type, class, attribute,
+      pseudo-classes, IDs, and inline.
     </aside>
   </section>
 </section>
