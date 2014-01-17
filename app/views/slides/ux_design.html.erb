@@ -1,0 +1,163 @@
+<% content_for :head do %>
+  <title> UX Design </title>
+<% end %>
+<section>
+  <h1> UX Design </h1>
+  <h3> User Experience of the Web </h3>
+  <p>
+    <small>
+      Matt Garrison, co-founder
+      <%= link_to "Iconoclast Labs, LLC" %>
+    </small>
+  </p>
+  <p>
+    <small>
+      <%= link_to "matt@iconoclastlabs.com", "matt@iconoclastlabs.com" %>
+      or
+    </small>
+    <small>
+      <%= link_to "@mattsgarrison", "http://twitter.com/mattsgarrison" %>
+    </small>
+</section>
+<section>
+  <h1> Terminology </h1>
+  <h3> We're bad at words </h3>
+  <br>
+  <p> Analogies and metaphors everywhere. </p>
+  <aside class='notes'>
+    Unfortunately, the best way to describe
+    something new or abstract is to anchor it to something you already
+    know. See what I did there?.
+  </aside>
+</section>
+<section>
+  <section>
+    <h1> HTML Fundamentals </h1>
+    <h3> Structure </h3>
+    <p>  HTML is like the frame of a car. </p>
+    <aside class='notes'>
+      It is the underlying structure. It influences your design, but for the most part it is not visible to the users.
+    </aside>
+  </section>
+
+  <section>
+    <h2> HTML is a <em>markup</em> language </h1>
+    <h4> It tells the browser what content to display.</h4>
+    <pre><code data-trim contenteditable>
+&lt;p&gt;This is content.&lt;/p&gt;
+
+    </code></pre>
+    <p>This is content.</p>
+    <aside class='notes'>
+      It separates content from presentation
+    </aside>
+  </section>
+
+  <section>
+    <h2> HTML is a <em>markup</em> language </h1>
+    <h4> It tells the browser what content to display.</h4>
+    <pre><code data-trim contenteditable>
+&lt;p&gt;This is content.&lt;/p&gt;
+&lt;h2&gt;This is content.&lt;/h2&gt;
+
+    </code></pre>
+    <p>This is content.</p>
+    <h2>This is content.</h2>
+  </section>
+  <section>
+    <h2> HTML is a <em>markup</em> language </h1>
+    <h4> It tells the browser what content to display.</h4>
+    <pre><code data-trim contenteditable>
+&lt;p&gt;This is content.&lt;/p&gt;
+&lt;h2&gt;This is content.&lt;/h2&gt;
+&lt;p&gt;This is &lt;em&gt;also&lt;/em&gt; content.&lt;/p&gt;
+    </code></pre>
+
+    <p>This is content.</p>
+    <h2>This is content.</h2>
+    <p>This is <em>also</em> content.</p>
+  </section>
+  <section>
+    <h2> HTML is a <em>markup</em> language </h1>
+    <h4> It tells the browser what content to display.</h4>
+    <pre><code data-trim >
+&lt;p&gt;This is content.&lt;/p&gt;
+&lt;h2&gt;This is content.&lt;/h2&gt;
+&lt;p&gt;This is &lt;em&gt;also&lt;/em&gt; content.&lt;/p&gt;
+&lt;img src="smiley_face.jpg"&gt;
+    </code></pre>
+    <p>This is content.</p>
+    <h2>This is content.</h2>
+    <p>This is <em>also</em> content.</p>
+    <%= asset_tag 'assets/smiley_face.jpg' %>
+  </section>
+
+
+
+  <section>
+    <h2> Required Structure </h2>
+
+    <pre><code data-trim contenteditable>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;
+    Brocolli vs. Brussel Sprouts
+  &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  Brussel Sprouts are clearly the better vegetable.
+&lt;/body&gt;
+&lt;/html&gt;
+      </code></pre>
+    <p> "Boilerplate" </p>
+    <aside class='notes'>
+      It is the underlying structure. It influences your design, but for the most part it is not visible to the users.
+
+      What are doctypes? HTML, XHTML, SVG, MathML, or combined types.
+
+      The browser creates a Document Object Model based on your HTML.
+
+      &lt;html&gt; root element
+    </aside>
+  </section>
+    <section>
+    <h2> A Simple Yet Complete Page </h2>
+
+    <pre><code data-trim contenteditable>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;title&gt;A tiny document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Main heading in my document&lt;/h1&gt;
+  &lt;!-- Tell people what we're doing. --&gt;
+  &lt;p&gt;
+    I am &lt;em&gt;writing&lt;/em&gt;
+    &lt;abbr title=&quot;Hyper Text Markup Language&quot;&gt;HTML&lt;/abbr&gt;.
+  &lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+      </code></pre>
+  <p>I am <em>writing</em>
+  <abbr title="Hyper Text Markup Language">HTML</abbr>.</p>
+    <aside class='notes'>
+      Explain Attributes
+    </aside>
+  </section>
+
+  <section>
+  <h1> Links and Resources </h1>
+  <p>Mozilla Developer Network - HTML</p>
+  <p> <%= link_to 'https://developer.mozilla.org/en-US/docs/Web/HTML', "https://developer.mozilla.org/en-US/docs/Web/HTML" %> </p>
+  <p><strike>W3Schools</strike></p>
+  <p><strike>http://www.w3schools.com/</strike></p>
+  <aside class='notes'>
+
+  </aside>
+</section>
+
+</section>
+
+

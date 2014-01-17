@@ -33,6 +33,7 @@ end
 
 gem 'foundation-rails'
 gem 'bourbon'
+gem 'maruku' # markdown support in haml
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
