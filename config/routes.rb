@@ -2,8 +2,9 @@ RailsgirlsNola::Application.routes.draw do
   get "welcome/index"
   get "/resources" => "welcome#resources"
   namespace :slides do
-    get "test"
+    #get "test"
     get "ux_design"
+    get "try_ruby"
   end
 
   # You can have the root of your site routed with "root"
