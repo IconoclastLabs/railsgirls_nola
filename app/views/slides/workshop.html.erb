@@ -1,75 +1,111 @@
 <% content_for :head do %>
-  <title> Workshop </title>
-  <%= stylesheet_link_tag "slides/try_ruby" %>
+<title> Workshop </title>
+<%= stylesheet_link_tag "slides/try_ruby" %>
 
 <% end %>
 <section>
-  <h1>Workshop</h1>
-  <h2>Let's Create!</h2>
-  <p>
-    <small>
-      Gant Laborde... yeah it's still me
-    </small>
-  </p>
-  <p>
+  <section>
+    <h1>Workshop</h1>
+    <h2>Let's Create!</h2>
+    <p>
+      <small>
+        Gant Laborde... yeah it's still me
+      </small>
+    </p>
+    <p>
+    </section>
 </section>
 <section>
   <section>
-    <h1>Know Ruby</h1>
-    <h3>Ruby is a Programming Language</h3>
-    <p>Made in Japan with productivity and happiness in mind</p>
-    <div class="fragment zoom-in">
-      <%= image_tag('../assets/slides/try_ruby/matz.jpg', width: 500)%>
-    </div>
+    <h1>Your First Web App!</h1>
+    <h3>What we will cover</h3>
+    <p></p>
+    <ul>
+      <li>Basics</li>
+      <li>Creating a Rails Project</li>
+      <li>Using Git</li>
+      <li>Heroku Hosting</li>
+    </ul>
     <aside class='notes'>
-      Developed in the mid-1990s by Yukihiro "Matz" Matsumoto in Japan.  Ruby is developed with programmer happiness and productivity in mind.
+      Don't forget to click OTHER in the directions
     </aside>
   </section>
-  <section data-background="#981A21">
-    <h1>You mean Ruby <em>on Rails?</em></h1>
-    <h2>...Right?</h2>
-  </section>
-  <section>
-    <div>
-      <h1>Not Always!</h1>
-      <p><strong>Rails</strong> is a framework for making excellent web applications.</p>
-    </div>
-    <p class="fragment">Ruby can be found in <span class="fragment">desktop apps,</span> <span class="fragment">phones,</span> <span class="fragment">robots,</span> <span class="fragment">and even other frameworks!</span> </p>
-    <br/>
-    <h3 class="fragment accent_color">It's GREAT!</h3>
-    <aside class='notes'>
-      Desktop apps, with shoes, macruby, and RubyMotion.
-      iPhones with RubyMotion.  Android with Ruboto
-      EVEN ROBOTS!  with ARTOO and mRuby
-      Sinatra is a micro-framework for quick web appliction dev.
-      It's not daunting, it's great!
-    </aside>
-  </section>
-</section>
-<section>
-  <section>
-    <h1>TryRuby.org</h1>
-    <%= image_tag('../assets/slides/try_ruby/try.jpg')%>
-    <aside class='notes'>
-      Let's all open our browsers and go to TryRuby.org to get started!
-    </aside>
-  </section>
-
 </section>
 
 <section>
-  <h1> Links and Resources </h1>
-  <p>How about a Free Book? by Daniel Kehoe</p>
-  <p> <%= link_to ' http://learn-rails.com/railsgirls', " http://learn-rails.com/railsgirls" %> invitation code <strong>RAILSGIRLS</strong></p>
-  <p>Enjoy Learning More Ruby with RubyWarrior</p>
-  <p> <%= link_to 'https://www.bloc.io/ruby-warrior/', "https://www.bloc.io/ruby-warrior/#/" %></p>
+  <section>
+    <h1>Rails Uses MVC</h1>
+    <%= image_tag('../assets/slides/workshop/MVC-Process.svg', width: 500)%>
+    <aside class='notes'>
 
-  <p>Schneems of Heroku Teaches Rails</p>
-  <p> <%= link_to 'http://www.schneems.com/ut-rails/', "http://www.schneems.com/ut-rails/" %></p>
+    </aside>
+  </section>
+  <section>
+    <h1>Rails Directory Structure</h1>
+    <ul>
+      <li><strong>app</strong></li>
+      <li><strong>bin</strong></li>
+      <li><strong>config</strong></li>
+      <li><strong>db</strong></li>
+      <li><strong>lib</strong></li>
+      <li><strong>log</strong></li>
+      <li><strong>public</strong></li>
+      <li><strong>test</strong></li>
+      <li><strong>tmp</strong></li>
+      <li><strong>vendor</strong></li>
+    </ul>
+    <aside class='notes'>
 
-  <aside class='notes'>
-    Special thanks to Daniel Kehoe for providing his book for free... you should def check the list of backers (for me!)
-    RubyWarrior is AWESOME
-    Schneems is awesome.
-  </aside>
+    </aside>
+  </section>
 </section>
+
+<section>
+  <section>
+    <h1>Your First Web App!</h1>
+    <h3>Rails TIME!</h3>
+    <p> <%= link_to 'http://guides.railsgirls.com/app/', "http://guides.railsgirls.com/app/", target: "_blank" %></p>
+    <p></p>
+    <aside class='notes'>
+      Don't forget to click OTHER in the directions
+    </aside>
+  </section>
+  <section>
+    <h1>Version Control Your App!</h1>
+    <h3>Use Git</h3>
+    <p> <%= link_to 'GitHub Offices', "http://customspaces.com/office/DhXb6EKlE9/github-office-san-francisco/", target: "_blank" %></p>
+    <p> <%= link_to 'http://guides.railsgirls.com/github/', "http://guides.railsgirls.com/github/", target: "_blank" %></p>
+    <p></p>
+    <aside class='notes'>
+      yay Git
+    </aside>
+  </section>  
+  <section>
+    <h1>Host Your App!</h1>
+    <h3>Use Heroku</h3>
+    <p> <%= link_to 'http://guides.railsgirls.com/heroku/', "http://guides.railsgirls.com/heroku/", target: "_blank" %></p>
+    <p></p>
+    <aside class='notes'>
+      yay Heroku 
+    </aside>
+  </section>   
+</section>
+
+    <section>
+      <section>
+        <h1> Links and Resources </h1>
+        <p>How about a Free Book? by Daniel Kehoe</p>
+        <p> <%= link_to ' http://learn-rails.com/railsgirls', " http://learn-rails.com/railsgirls" %> invitation code <strong>RAILSGIRLS</strong></p>
+        <p>Enjoy Learning More Ruby with RubyWarrior</p>
+        <p> <%= link_to 'https://www.bloc.io/ruby-warrior/', "https://www.bloc.io/ruby-warrior/#/" %></p>
+
+        <p>Schneems of Heroku Teaches Rails</p>
+        <p> <%= link_to 'http://www.schneems.com/ut-rails/', "http://www.schneems.com/ut-rails/" %></p>
+
+        <aside class='notes'>
+          Special thanks to Daniel Kehoe for providing his book for free... you should def check the list of backers (for me!)
+          RubyWarrior is AWESOME
+          Schneems is awesome.
+        </aside>
+      </section>
+    </section>
