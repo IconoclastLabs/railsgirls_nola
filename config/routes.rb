@@ -5,6 +5,7 @@ RailsgirlsNola::Application.routes.draw do
     #get "test"
     get "ux_design"
     get "try_ruby"
+    get "workshop"
   end
 
   # You can have the root of your site routed with "root"
