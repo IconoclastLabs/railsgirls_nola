@@ -1,0 +1,75 @@
+<% content_for :head do %>
+  <title> Workshop </title>
+  <%= stylesheet_link_tag "slides/try_ruby" %>
+
+<% end %>
+<section>
+  <h1>Workshop</h1>
+  <h2>Let's Create!</h2>
+  <p>
+    <small>
+      Gant Laborde... yeah it's still me
+    </small>
+  </p>
+  <p>
+</section>
+<section>
+  <section>
+    <h1>Know Ruby</h1>
+    <h3>Ruby is a Programming Language</h3>
+    <p>Made in Japan with productivity and happiness in mind</p>
+    <div class="fragment zoom-in">
+      <%= image_tag('../assets/slides/try_ruby/matz.jpg', width: 500)%>
+    </div>
+    <aside class='notes'>
+      Developed in the mid-1990s by Yukihiro "Matz" Matsumoto in Japan.  Ruby is developed with programmer happiness and productivity in mind.
+    </aside>
+  </section>
+  <section data-background="#981A21">
+    <h1>You mean Ruby <em>on Rails?</em></h1>
+    <h2>...Right?</h2>
+  </section>
+  <section>
+    <div>
+      <h1>Not Always!</h1>
+      <p><strong>Rails</strong> is a framework for making excellent web applications.</p>
+    </div>
+    <p class="fragment">Ruby can be found in <span class="fragment">desktop apps,</span> <span class="fragment">phones,</span> <span class="fragment">robots,</span> <span class="fragment">and even other frameworks!</span> </p>
+    <br/>
+    <h3 class="fragment accent_color">It's GREAT!</h3>
+    <aside class='notes'>
+      Desktop apps, with shoes, macruby, and RubyMotion.
+      iPhones with RubyMotion.  Android with Ruboto
+      EVEN ROBOTS!  with ARTOO and mRuby
+      Sinatra is a micro-framework for quick web appliction dev.
+      It's not daunting, it's great!
+    </aside>
+  </section>
+</section>
+<section>
+  <section>
+    <h1>TryRuby.org</h1>
+    <%= image_tag('../assets/slides/try_ruby/try.jpg')%>
+    <aside class='notes'>
+      Let's all open our browsers and go to TryRuby.org to get started!
+    </aside>
+  </section>
+
+</section>
+
+<section>
+  <h1> Links and Resources </h1>
+  <p>How about a Free Book? by Daniel Kehoe</p>
+  <p> <%= link_to ' http://learn-rails.com/railsgirls', " http://learn-rails.com/railsgirls" %> invitation code <strong>RAILSGIRLS</strong></p>
+  <p>Enjoy Learning More Ruby with RubyWarrior</p>
+  <p> <%= link_to 'https://www.bloc.io/ruby-warrior/', "https://www.bloc.io/ruby-warrior/#/" %></p>
+
+  <p>Schneems of Heroku Teaches Rails</p>
+  <p> <%= link_to 'http://www.schneems.com/ut-rails/', "http://www.schneems.com/ut-rails/" %></p>
+
+  <aside class='notes'>
+    Special thanks to Daniel Kehoe for providing his book for free... you should def check the list of backers (for me!)
+    RubyWarrior is AWESOME
+    Schneems is awesome.
+  </aside>
+</section>
