@@ -1,6 +1,6 @@
 <% content_for :head do %>
-  <title> Try Ruby </title>
-  <%= stylesheet_link_tag "slides/try_ruby" %>
+<title> Try Ruby </title>
+<%= stylesheet_link_tag "slides/try_ruby" %>
 
 <% end %>
 <section>
@@ -17,49 +17,62 @@
       <%= link_to "gant@iconoclastlabs.com", "mailto:gant@iconoclastlabs.com" %>
       <%= link_to "@gantlaborde", "http://twitter.com/gantlaborde", class: 'twitter_link' %>
     </small>
-</section>
-<section>
-  <section>
-    <h1>Know Ruby</h1>
-    <h3>Ruby is a Programming Language</h3>
-    <p>Made in Japan with productivity and happiness in mind</p>
-    <div class="fragment zoom-in">
-      <%= image_tag('../assets/slides/try_ruby/matz.jpg', width: 500)%>
-    </div>
-    <aside class='notes'>
-      Developed in the mid-1990s by Yukihiro "Matz" Matsumoto in Japan.  Ruby is developed with programmer happiness and productivity in mind.
-    </aside>
-  </section>
-  <section data-background="#981A21">
-    <h1>You mean Ruby <em>on Rails?</em></h1>
-    <h2>...Right?</h2>
   </section>
   <section>
-    <div>
-      <h1>Not Always!</h1>
-      <p><strong>Rails</strong> is a framework for making excellent web applications.</p>
-    </div>
-    <p class="fragment">Ruby can be found in <span class="fragment">desktop apps,</span> <span class="fragment">phones,</span> <span class="fragment">robots,</span> <span class="fragment">and even other frameworks!</span> </p>
-    <br/>
-    <h3 class="fragment accent_color">It's GREAT!</h3>
-    <aside class='notes'>
-      Desktop apps, with shoes, macruby, and RubyMotion.
-      iPhones with RubyMotion.  Android with Ruboto
-      EVEN ROBOTS!  with ARTOO and mRuby
-      Sinatra is a micro-framework for quick web appliction dev.
-      It's not daunting, it's great!
-    </aside>
+    <section>
+      <h1>Know Ruby</h1>
+      <h3>Ruby is a Programming Language</h3>
+      <p>Made in Japan with productivity and happiness in mind</p>
+      <div class="fragment zoom-in">
+        <%= image_tag('../assets/slides/try_ruby/matz.jpg', width: 500)%>
+      </div>
+      <aside class='notes'>
+        Developed in the mid-1990s by Yukihiro "Matz" Matsumoto in Japan.  Ruby is developed with programmer happiness and productivity in mind.
+      </aside>
+    </section>
+    <section data-background="#981A21">
+      <h1>You mean Ruby <em>on Rails?</em></h1>
+      <h2>...Right?</h2>
+    </section>
+    <section>
+      <div>
+        <h1>Not Always!</h1>
+        <p><strong>Rails</strong> is a framework for making excellent web applications.</p>
+      </div>
+      <p class="fragment">Ruby can be found in <span class="fragment">desktop apps,</span> <span class="fragment">phones,</span> <span class="fragment">robots,</span> <span class="fragment">and even other frameworks!</span> </p>
+      <br/>
+      <h3 class="fragment accent_color">It's GREAT!</h3>
+      <aside class='notes'>
+        Desktop apps, with shoes, macruby, and RubyMotion.
+        iPhones with RubyMotion.  Android with Ruboto
+        EVEN ROBOTS!  with ARTOO and mRuby
+        Sinatra is a micro-framework for quick web appliction dev.
+        It's not daunting, it's great!
+      </aside>
+    </section>
   </section>
-</section>
-<section>
   <section>
-    <h1>TryRuby.org</h1>
-    <%= image_tag('../assets/slides/try_ruby/try.jpg')%>
-    <aside class='notes'>
-      Let's all open our browsers and go to TryRuby.org to get started!
-    </aside>
+    <section>
+      <h1>TryRuby.org</h1>
+      <%= image_tag('../assets/slides/try_ruby/try.jpg')%>
+      <aside class='notes'>
+        Let's all open our browsers and go to TryRuby.org to get started!
+      </aside>
+    </section>
+
   </section>
 
-</section>
+  <section>
+    <section>
+      <h1> Links and Resources </h1>
+      <p>Read about Common Trip-Ups and Tour Ruby</p>
+      <p> <%= link_to 'http://www.sitepoint.com/common-trip-ups-new-rubyists-part/', "http://www.sitepoint.com/common-trip-ups-new-rubyists-part/" %></p>
+      <p>Enjoy Learning More Ruby with RubyWarrior</p>
+      <p> <%= link_to 'https://www.bloc.io/ruby-warrior/', "https://www.bloc.io/ruby-warrior/#/" %></p>
 
- 
+      <aside class='notes'>
+        Sitepoint article will help new rubyists!
+        RubyWarrior is AWESOME
+      </aside>
+    </section>
+  </section>
