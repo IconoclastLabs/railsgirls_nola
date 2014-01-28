@@ -13,6 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
-//= require_tree .
+//= require 'welcome'
 
 $(document).foundation('magellan', { threshold: 500 })

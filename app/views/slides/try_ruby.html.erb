@@ -64,6 +64,37 @@
 
   <section>
     <section>
+      <h1>Ruby on Your Computer</h1>
+      <h3>We set up Vagrant</h3>
+
+      <aside class='notes'>
+        Vagrant is a tool to create, start, stop and provision development
+        virtual machines. We configured a provisioning tool to set up each
+        vagrant box identically so that everyone has a fully working VM and
+        something they can't "damage".
+
+        Vagrant, VirtualBox, Puppet in unison.
+
+        Why a virtual machine?
+        Windows is a terrible development environment if you're not writing for Windows.
+        GUIs are slow to navigate. Unix treats everything as a file and a stream of text.
+        Windows (> Vista treats everything as unique objects).
+        Windows command line is near useless.
+        Windows is difficult to script.
+
+        OSX: we don't want to manipulate the system libraries it uses.
+        OSX has a different set of dependencies too.
+
+        Windows and OSX are *heavy* on system resources.  Linux is light.
+
+        Nobody deploys code to OSX. Nobody deploys to Windows.
+        Everyone deploys to linux, why not develop against the same system you're deploying to?
+      </aside>
+    </section>
+  </section>
+
+  <section>
+    <section>
       <h1> Links and Resources </h1>
       <p>Read about Common Trip-Ups and Tour Ruby</p>
       <p> <%= link_to 'http://www.sitepoint.com/common-trip-ups-new-rubyists-part/', "http://www.sitepoint.com/common-trip-ups-new-rubyists-part/" %></p>
@@ -76,3 +107,4 @@
       </aside>
     </section>
   </section>
+
