@@ -16,15 +16,13 @@
     <%= stylesheet_link_tag("reveal.min", :media => "screen, projection") %>
     <%= stylesheet_link_tag "theme/solarized.css"%>
     <%= stylesheet_link_tag "zenburn" %>
-    <%= stylesheet_link_tag("print/pdf.css", :media => 'pdf') %>
-    <%= stylesheet_link_tag("print/paper.css", :media => 'print') %>
+
 
     <%= javascript_include_tag "application" %>
     <%= javascript_include_tag "reveal.min" %>
     <%= javascript_include_tag "head.min.js" %>
     <%= javascript_include_tag "slides/ux_design" %>
-    <!-- <link rel="stylesheet" href="css/theme/default.css" id="theme"> -->
-
+    <%= stylesheet_link_tag("print/pdf.css", :media => 'print') %>
 
     <link rel="shortcut icon" href="../favicon.png">
     <!--[if lt IE 9]>
