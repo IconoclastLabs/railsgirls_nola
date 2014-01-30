@@ -21,6 +21,7 @@ module RailsgirlsNola
     # config.i18n.default_locale = :de
     config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')
     config.assets.paths << Rails.root.join('vendor', 'assets', 'javascripts')
+    config.assets.paths << Rails.root.join('vendor', 'assets', 'stylesheets')
     config.assets.precompile += %w( .svg .eot .woff .ttf )
     config.assets.precompile += %w( modernizr )
     config.assets.precompile += %w( reveal.min )
@@ -28,5 +29,7 @@ module RailsgirlsNola
     config.assets.precompile += %w( zenburn )
     config.assets.precompile += %w( theme/solarized.css )
     config.assets.precompile += %w( head.min.js )
+    config.assets.precompile += %w( print/pdf.css )
+    config.assets.precompile += %w( print/paper.css )
   end
 end
