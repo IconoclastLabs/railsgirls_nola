@@ -1,6 +1,7 @@
 RailsgirlsNola::Application.routes.draw do
   get "welcome/index"
   get "/resources" => "welcome#resources"
+  get "/graduates" => "welcome#graduates"
   namespace :slides do
     #get "test"
     get "ux_design"

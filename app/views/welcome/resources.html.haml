@@ -1,5 +1,5 @@
 .row
-  .columns.small-12.medium-6.large-5.small-centered{style: "margin-top: 10px;"}
+  .columns.small-12.medium-6.large-6.small-centered{style: "margin-top: 10px;"}
     %div{:'data-magellan-expedition' => "fixed"}
       %dl.railsgirls-sub-nav.small-centered
         %dd
@@ -10,6 +10,8 @@
           = link_to 'Schedule', welcome_index_path + '#schedule'
         %dd{:'data-magellan-arrival' => "resources"}
           = link_to 'Resources', resources_path + "#resources"
+        %dd
+          = link_to 'Graduates', graduates_path + "#graduates"          
 
 .row
   .columns.small-12.large-12
