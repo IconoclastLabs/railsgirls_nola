@@ -1,0 +1,29 @@
+#about.row
+  .row
+    .columns.small-12
+      %a{name:"About"}
+      %h2.nav_section.columns.small-12{:'data-magellan-destination'=>"about"}About
+  .columns.small-12.medium-6
+    .row
+      %h6.columns.small-12.large-10.large-offset-1 Rails Girls is a free Ruby-on-Rails workshop to introduce absolute beginners to the world of programming and web development.
+    .row
+      %h6.columns.small-12.large-10.large-offset-1 Rails Girls aims to give the tools to enthusiastic girls and women to build their ideas themselves.
+  .columns.small-12.medium-5.medium-offset-1
+    .panel
+      .row
+        %h6.columns.small-12.large-10.large-offset-1 Are you a girl who wants to learn Rails?
+        %h6.columns.small-12.large-10.large-offset-1
+          .button.disabled
+            Apply Here
+          -#= link_to 'Apply Here', 'https://docs.google.com/forms/d/1U3Xp9ZDRwVs-RABN7WGWbMU_rLFYzawZoy8sJ6Z3VCs/viewform', class: 'button'
+      .row
+        %h6.columns.small-12.large-10.large-offset-1 Interested in being a coach?
+        %h6.columns.small-12.large-10.large-offset-1
+          .button.disabled
+            Apply Here
+          -#= link_to 'Apply Here', 'https://docs.google.com/forms/d/1A1F9a9UFn58xgeqFcvtPT4gBnvbGqOeGLv9_1HJhd6E/viewform', class: 'button'
+      .alert-box.alert.radius{:'data-alert' => ''}
+        %h5 Wow!
+
+        %h6 We've filled all available coach and participant slots.
+        %h6 Rails Girls will surely happen again soon, be sure to check back for updates.

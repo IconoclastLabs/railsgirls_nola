@@ -2,15 +2,14 @@
   .columns.small-12.medium-6.large-6.small-centered{style: "margin-top: 10px;"}
     %div{:'data-magellan-expedition' => "fixed"}
       %dl.railsgirls-sub-nav.small-centered
-        %dd
+        %dd{:'data-magellan-arrival' => "title"}
+        %dd{:'data-magellan-arrival' => "about"}
           = link_to 'About', welcome_index_path + '#about'
-        %dd
+        %dd{:'data-magellan-arrival' => "location"}
           = link_to 'Location', welcome_index_path + '#location'
-        %dd
+        %dd{:'data-magellan-arrival' => "schedule"}
           = link_to 'Schedule', welcome_index_path + '#schedule'
         %dd{:'data-magellan-arrival' => "resources"}
           = link_to 'Resources', welcome_index_path + "#resources"
         %dd
           = link_to 'Graduates', graduates_path + "#graduates"          
-
-= render "shared/schedule"
