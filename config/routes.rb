@@ -1,6 +1,6 @@
 RailsgirlsNola::Application.routes.draw do
   get "welcome/index"
-  get "/resources" => "welcome#resources"
+  get "/resources" => "welcome#index" # no longer it's own page, but still directing for it.
   get "/graduates" => "welcome#graduates"
   namespace :slides do
     #get "test"

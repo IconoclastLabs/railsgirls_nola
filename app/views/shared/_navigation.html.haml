@@ -4,12 +4,12 @@
       %dl.railsgirls-sub-nav.small-centered
         %dd{:'data-magellan-arrival' => "title"}
         %dd{:'data-magellan-arrival' => "about"}
-          = link_to 'About', welcome_index_path + '#about'
+          = link_to 'About', root_path + '#about'
         %dd{:'data-magellan-arrival' => "location"}
-          = link_to 'Location', welcome_index_path + '#location'
+          = link_to 'Location', root_path + '#location'
         %dd{:'data-magellan-arrival' => "schedule"}
-          = link_to 'Schedule', welcome_index_path + '#schedule'
+          = link_to 'Schedule', root_path + '#schedule'
         %dd{:'data-magellan-arrival' => "resources"}
-          = link_to 'Resources', welcome_index_path + "#resources"
+          = link_to 'Resources', root_path + "#resources"
         %dd
           = link_to 'Graduates', graduates_path + "#graduates"          

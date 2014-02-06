@@ -2,22 +2,8 @@
   .columns.small-10.medium-8.large-6.small-centered
     %a{name:"Title"}
     = image_tag 'Logo.png', :'data-magellan-destination'=>"title"
-.row
-  .columns.small-12.medium-6.large-6.small-centered{style: "margin-top: 10px;"}
-    %div{:'data-magellan-expedition' => "fixed"}
-      %dl.railsgirls-sub-nav.small-centered
-        %dd{:'data-magellan-arrival' => "title"}
-        %dd{:'data-magellan-arrival' => "about"}
-          = link_to 'About', '#about'
-        %dd{:'data-magellan-arrival' => "location"}
-          = link_to 'Location', '#location'
-        %dd{:'data-magellan-arrival' => "schedule"}
-          = link_to 'Schedule', '#schedule'
-        %dd
-          = link_to 'Resources', "#resources"
-        %dd
-          = link_to 'Graduates', graduates_path + "#graduates"          
 
+= render "shared/navigation"
 
 = render "shared/about"
 
