@@ -9,4 +9,4 @@ Graciously hosted by [Heroku](http://www.heroku.com/) for free
 
 Domain provided by [Gandi.net](http://gandi.net) for free
 
-Maintained by [Iconoclast Labs](http://iconoclastlabs.com) for free
+Created and Maintained by [Iconoclast Labs](http://iconoclastlabs.com) for free
